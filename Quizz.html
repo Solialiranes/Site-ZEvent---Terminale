@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Z Event - Evenement caritatif sur Twitch">
+	<link rel="stylesheet" style type="text/css" href="Style.css" />
+ 
+	<title> Z Event by ZeratoR & Dach </title>
+	<link rel="icon" type="image/png" href="images/ZEvent_logo32.png" />
+ 
+ 
+</head>
+
+<body>
+
+	<a href="index.html"> <img src="images/ZEvent_logo.png" height="150" alt="ZEvent_logo"> </a>
+	
+<div class="principale">
+	<div class="container-nav">
+		<!--Menu du site-->
+		<ul class="menu">
+            <ul>
+                <li><a href="Streamers.html">Streamers</a></li>
+                <li><a href="Moments Forts.html">Moments Forts </a></li>
+				<li><a href="InstitutPasteur.html">Institut Pasteur</a></li>
+				<li><a href="Quizz.html">Quizz</a></li>
+				<li class="dropdown right">
+					<a href="javascript:void(0)" class="dropbtn">Les Jeux</a>
+					<div class="dropdown-content">
+						<a href="jeu1.html">Casse Brique</a>
+						<a href="jeu2.html">Jeu 2</a>
+						<a href="jeu3.html">Jeu 3</a>
+					</div>
+				</li>
+            </ul>
+		</ul>
+	</div><br>
+
+<script type="text/javascript">
+
+function result() {
+var nbReponses= 3; 
+var reponses= 0;
+var count= 0;
+for (i= 0; i < (arguments.length); i++) {
+reponses= reponses + document.qcm.elements[i * nbReponses].checked + document.qcm.elements[(i * nbReponses) + 1].checked;
+count= count + document.qcm.elements[(i * nbReponses) + arguments[i]].checked;
+}
+window.alert('vous avez ' + count + ' réponse(s) bonnes sur ' + arguments.length);
+}
+</script>
+
+<FORM name="qcm" action="">
+
+<!--Question-->
+<h2>Qui a crée le <span>Z Event</span> ?</h2>
+	<h3><input type= "radio" name= "q1">Squeezie <input type= "radio" name ="q1">Zerator <input type="radio" name="q1">Gotaga</h3><br>
+<h2>Qui a touché le <span>chèque</span> cette année?</h2>
+	<h3><input type= "radio" name= "q2">Médecins Sans Frontières <input type= "radio" name= "q2">Siphano<input type="radio" name="q2">L'Institut Pasteur</h3><br>
+<h2>Combien d'<span>argent</span> ont-ils récolté cette année ?</h2>
+	<h3><input type= "radio" name= "q3">3 509 878,00 €<input type= "radio" name= "q3">3 509 568,00 €<input type="radio" name="q3">1 094 731,34 €</h3><br>
+<h2>Qui a fait le plus gros <span>don</span> lors de l'évènement ?</h2>
+	<h3><input type= "radio" name= "q4">Webedia<input type= "radio" name= "q4">Le streamer Ninja<input type="radio" name="q4">La réponse D</h3><br>
+<h2>Qui a gagné le <span>competition Trackmania</span> au tapis de danse ?
+	<h3><input type= "radio" name= "q5">Sardoche<input type= "radio" name= "q5">Jiraya<input type="radio" name="q5">CarlJr</h3><br>
+
+
+<!-- Réponses-->
+<input type="button" value="Validation" onclick= "result(1, 2, 0, 1, 2);"><input type="reset" value="Recommencer">
+</form>
+ 
+ <br>
+<!--bas de page-->
+	<section class= "footer">
+		<div class= "align"> 
+			<div class="logoZevent">
+			<a href="https://zevent.fr/"> <img src="images/ZEvent_logo.png" height="60" width="100" align="middle"> </a>
+			</div>
+			<div class="titre">
+			<p> Site factice du Z Event expliqué par Christian & Lilian </p>
+			</div>
+			<div class="logodroit">
+			<a class="Insta"  href="https://www.instagram.com/zeventfr/"> <img src="images/Instagram.png"  height="35" width="35" align="middle"> </a>
+			<a class="twitter" href="https://twitter.com/ZEventfr"> <img src="images/twitter.png"  height="30" width="35" align="middle"> </a>
+			</div>
+		</div>
+	</section> 
+</body>
+
+</html>

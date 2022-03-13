@@ -1,0 +1,172 @@
+﻿head {
+	text-align: left;
+}
+
+body { /* Police d'écriture*/
+	font-family: "Quantify", "Arial Black", "Sans-serif";
+}
+	
+@font-face { 
+  font-family: Quantify;
+  src: local(Police Exemple), url('Quantify.ttf') format("ttf"),
+      url('Quantify.ttf') format("opentype");
+}
+
+body { /* Background */
+	color:white;
+	text-align: center;
+	background-color: #211f1f;
+	margin:0;
+	padding:0;
+	background: url(images/z-event-zerator.jpg) no-repeat center fixed; 
+	background-size: cover; 
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #12121 ;
+}
+
+li {
+    float: center;
+	display:inline-block;
+}
+
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #009432;
+			padding: 12px 16px;
+        }
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #009432;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #009432}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bouton {
+  border-radius: 4px;	
+  background-color: #008000;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bouton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+}
+
+.bouton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bouton:hover span {
+  padding-right: 25px;
+}
+
+.bouton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.principale { 
+   position: relative;
+   padding-bottom: 100px;
+} 
+
+.footer {
+	background-color: #121212;
+	align-items: center!important;
+	padding: 25px 0;
+	padding-left:300px;
+}
+
+.align {
+	display: flex;
+}
+
+.logoZevent{
+	margin: 0 100px;
+	
+}
+
+.logodroit {
+	margin: 0 100px;
+	padding-top: 10px;
+	
+}
+
+span {
+	color: #009432;
+}
+
+.jeu {
+	width: 900px;
+	height:650px;
+	background-color: #ffffff;
+	opacity: 0.5;
+	margin-left: auto;
+    margin-right: auto;
+}
